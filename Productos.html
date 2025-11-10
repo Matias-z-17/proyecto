@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Productos | Nombre del Sitio</title>
+    <link rel="stylesheet" href="Productos.css">
+</head>
+<body>
+    
+    <header> 
+       <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li class="dropdown">
+          <a href="#">Información ▾</a>
+
+          <ul class="dropdown-content">
+            <li><a href="Productos.html">Productos</a></li>
+            <li><a href="Categorias.html">Categorias</a></li>
+            <li><a href="Sobrenosotros.html">Sobre Nosotros</a></li>
+        </ul>
+        </li>
+      </ul>
+    </nav>
+    </header>
+
+    <main id="ContenidoPrincipal">
+        
+        <section class="hero">
+            <h2>Descubre la Esencia de Nuestra Tierra</h2>
+            <p>Productos artesanales hechos con tradición y orgullo Guanacasteco.</p>
+        </section>
+
+        <section class="artesanias">
+            <h1>Artesanía Tradicional</h1>
+            
+            <div class="product-grid">
+                <article class="product-card" onclick="alertaProducto('Vasija de Cerámica')">
+                    <div class="product-card__image-container">
+                        <img src="vasija.webp" alt="Vasija de Cerámica" class="product-card__image">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">Vasija de Cerámica</h3>
+                        <p class="product-card__price">₡18,000</p>
+                    </div>
+                </article>
+                
+                <article class="product-card" onclick="alertaProducto('El Pilón')">
+                    <div class="product-card__image-container">
+                        <img src="pilon.webp" alt="Pilón de madera" class="product-card__image">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">El Pilón</h3>
+                        <p class="product-card__price">₡20,000</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="alimentos">
+            <h1>Alimentos Típicos</h1>
+            <p>Comidas artesanales hechas con tradición y orgullo Guanacasteco.</p>
+
+            <div class="product-grid menu">
+                <article class="product-card" onclick="alertaProducto('Chifrijo')">
+                    <div class="product-card__image-container">
+                        <img src="chifrijo.webp" alt="Chifrijo" class="product-card__image">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">Chifrijo</h3>
+                        <p class="product-card__price">₡8,000</p>
+                    </div>
+                </article>
+                <article class="product-card" onclick="alertaProducto('Olla de carne')">
+                    <div class="product-card__image-container">
+                        <img src="olladecarne.webp" alt="Olla de carne" class="product-card__image">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">Olla de carne</h3>
+                        <p class="product-card__price">₡5,000</p>
+                    </div>
+                </article>
+                <article class="product-card" onclick="alertaProducto('Tamales')">
+                    <div class="product-card__image-container">
+                        <img src="tamales.webp" alt="Tamales" class="product-card__image">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">Tamales</h3>
+                        <p class="product-card__price">₡8,000</p>
+                    </div>
+                </article>
+                <article class="product-card" onclick="alertaProducto('Ceviche')">
+                    <div class="product-card__image-container">
+                        <img src="ceviche.jpg" alt="Ceviche" class="product-card__image">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">Ceviche</h3>
+                        <p class="product-card__price">₡8,000</p>
+                    </div>
+                </article>
+                <article class="product-card" onclick="alertaProducto('Gallo Pinto')">
+                    <div class="product-card__image-container">
+                        <img src="gallopinto.png" alt="Gallo Pinto" class="product-card__image">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">Gallo Pinto</h3>
+                        <p class="product-card__price">₡8,000</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <small>© 2025 Bombocla Incorporations</small>
+    </footer>
+
+    <script>
+        
+        function alertaProducto(nombre) {
+            alert("¡Has seleccionado el producto: " + nombre + "!");
+        }
+    </script>
+</body>
+</html>

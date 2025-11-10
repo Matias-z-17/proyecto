@@ -1,0 +1,262 @@
+/* ==========================================================
+   ESTILOS GENERALES Y RESET
+   ========================================================== */
+
+:root {
+    /* Define variables de color para fácil modificación */
+    --color-primario: #B8860B; /* Ocre oscuro/Dorado - Guanacasteco */
+    --color-secundario: #4B0082; /* Índigo oscuro/Púrpura */
+    --color-fondo: #f8f8f8; /* Fondo claro */
+    --color-texto-oscuro: #333;
+    --color-texto-claro: #fff;
+    --color-acento: #ffcc00; /* Amarillo brillante */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--color-texto-oscuro);
+    background-color: var(--color-fondo);
+}
+
+/* ==========================================================
+   HEADER Y NAVEGACIÓN
+   ========================================================== */
+
+header {
+    background-color: var(--color-primario);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #2E7D32;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+
+
+.navbar a {
+  display: block;
+  color: rgb(255, 255, 255);
+  padding: 30px 50px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #2E7D32;
+}
+
+
+.dropdown-content {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  background-color: #2E7D32;
+  min-width: 160px;
+  z-index: 1000;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+.dropdown-content li {
+  text-align: left;
+}
+
+.dropdown-content li a {
+  display: block;
+  padding: 20px 15px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+.dropdown-content li a:hover {
+  background-color: #2E7D32;
+}
+
+.dropdown:hover .dropdown-content {
+  max-height: 500px;
+  opacity: 1;
+}
+
+/* ==========================================================
+   CONTENIDO PRINCIPAL Y SECCIONES
+   ========================================================== */
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1, h2 {
+    color: var(--color-secundario);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 1.8em;
+    border-bottom: 2px solid var(--color-acento);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+p {
+    margin-bottom: 20px;
+    text-align: justify;
+    padding: 0 10px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 40px 0;
+}
+
+/* Sección Hero */
+.hero {
+    background-color: #e0e0e0;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.hero h2 {
+    color: var(--color-primario);
+    font-size: 2.2em;
+    border-bottom: none;
+}
+
+.hero p {
+    font-size: 1.1em;
+    font-style: italic;
+    color: var(--color-texto-oscuro);
+}
+
+/* ==========================================================
+   GRID DE PRODUCTOS
+   ========================================================== */
+
+.product-grid {
+    display: grid;
+    /* 1 columna por defecto, 2 en tablets, 3 o 4 en desktop */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 30px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.product-card {
+    background-color: var(--color-texto-claro);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer; /* Indica que es clickeable */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Efecto 3D al pasar el mouse */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-card__image-container {
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+}
+
+.product-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+}
+
+.product-card__content {
+    padding: 15px;
+}
+
+.product-card__title {
+    font-size: 1.3em;
+    color: var(--color-secundario);
+    margin-bottom: 8px;
+}
+
+.product-card__price {
+    font-size: 1.2em;
+    color: var(--color-primario);
+    font-weight: bold;
+}
+
+
+/* ==========================================================
+   FOOTER
+   ========================================================== */
+
+footer {
+    background-color: var(--color-texto-oscuro);
+    color: var(--color-fondo);
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+}
+
+/* ==========================================================
+   MEDIA QUERIES (Para hacer Responsive)
+   ========================================================== */
+
+/* Teléfonos Pequeños */
+@media (max-width: 600px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .dropdown-content {
+        position: static; /* Hace que el dropdown se expanda hacia abajo */
+        width: 100%;
+    }
+
+    .hero h2 {
+        font-size: 1.8em;
+    }
+    
+    .product-grid {
+        grid-template-columns: 1fr; /* Una sola columna en móviles */
+    }
+}
