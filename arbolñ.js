@@ -12,15 +12,15 @@ const initialData = {
                 {
                     nombre: "Portátiles",
                     items: [
-                        { titulo: "Laptop Ultrabook X1", precio: 1250000, etiquetas: ["Nuevo", "Premium"] },
-                        { titulo: "Laptop Gamer Z90", precio: 1800000, etiquetas: ["Oferta", "Rendimiento"] }
+                        { titulo: "Ceviche", precio: 1250000, etiquetas: ["Alimentos", "Mariscos"] },
+                        { titulo: "Chifrijo", precio: 1800000, etiquetas: ["Alimentos", "Cultural"] }
                     ]
                 },
                 {
                     nombre: "Accesorios",
                     items: [
-                        { titulo: "Mouse Inalámbrico", precio: 15000, etiquetas: ["Básico"] },
-                        { titulo: "Teclado Mecánico RGB", precio: 45000, etiquetas: ["Gamer", "Ergonómico"] }
+                        { titulo: "Gallo pinto", precio: 15000, etiquetas: ["Alimentos"] },
+                        { titulo: "Tamales", precio: 45000, etiquetas: ["Alimentos", "Navideño"] }
                     ]
                 }
             ]
@@ -31,8 +31,8 @@ const initialData = {
                 {
                     nombre: "Cocina",
                     items: [
-                        { titulo: "Licuadora Profesional", precio: 85000, etiquetas: ["Potente"] },
-                        { titulo: "Cafetera Expresso", precio: 150000, etiquetas: ["Lujo"] }
+                        { titulo: "Pilon", precio: 85000, etiquetas: ["Madera"] },
+                        { titulo: "Vasija", precio: 150000, etiquetas: ["Ceramica"] }
                     ]
                 }
             ]
