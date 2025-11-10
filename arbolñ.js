@@ -12,8 +12,8 @@ const initialData = {
                 {
                     nombre: "Portátiles",
                     items: [
-                        { titulo: "Ceviche", precio: 1250000, etiquetas: ["Alimentos", "Mariscos"] },
-                        { titulo: "Chifrijo", precio: 1800000, etiquetas: ["Alimentos", "Cultural"] }
+                        { titulo: "Ceviche", precio: 125000, etiquetas: ["Alimentos", "Mariscos"] },
+                        { titulo: "Chifrijo", precio: 18000, etiquetas: ["Alimentos", "Cultural"] }
                     ]
                 },
                 {
@@ -31,8 +31,8 @@ const initialData = {
                 {
                     nombre: "Cocina",
                     items: [
-                        { titulo: "Pilon", precio: 85000, etiquetas: ["Madera"] },
-                        { titulo: "Vasija", precio: 150000, etiquetas: ["Ceramica"] }
+                        { titulo: "Pilon", precio: 8500, etiquetas: ["Madera"] },
+                        { titulo: "Vasija", precio: 15000, etiquetas: ["Ceramica"] }
                     ]
                 }
             ]
